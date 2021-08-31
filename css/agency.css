@@ -1,0 +1,491 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+*:before,*:after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.agency-section{
+    text-align:center;
+    margin-top:10px;
+}
+
+.agency-section-title{
+    color:#000;
+    font-weight: 700;
+    font-size:25px;
+    margin-bottom:10px;
+}
+
+.agency-section-description{
+    font-weight: 600;
+    font-size:13px;
+}
+/* Root */
+
+
+
+
+
+/* Navbar */
+.navbar{
+    background-color: white;
+    min-height: 5.25rem;
+}
+
+.navbar.has-shadow{
+    box-shadow: 0 15px 15px 0 whitesmoke;
+}
+
+.navbar .navbar-item{
+    font-weight: 500;
+    font-size:12px;
+    padding:18px;
+    color:#000;
+}
+
+.navbar .navbar-burger {
+    height: 5.25rem;
+}
+
+.navbar-burger span {
+    height: 3px;
+    width: 24px;
+}
+
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 10px);
+}
+
+.navbar-burger span:nth-child(2) {
+    top: calc(50% - 3px);
+}
+
+.navbar-burger.is-active span:nth-child(1) {
+    -webkit-transform: translateY(5px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+}
+
+.navbar-burger:hover {
+    /* background-color: rgba(0, 0, 0, 0.05); */
+    background-color: #fff;
+}
+
+a.navbar-item:hover, a.navbar-item.is-active, .navbar-link:hover, .navbar-link.is-active {
+    /* background-color: #fafafa; */
+    /* color: #3273dc; */
+    background-color: #fff;
+    color:#000;
+}
+
+.navbar-item.agency-logo:before{
+    content: "the";
+    text-transform: uppercase;
+    font-size:10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.navbar-item.agency-logo:after{
+    content: "agency";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+/* Navbar */
+
+
+
+
+
+/* Hero */
+.hero.is-halfheight.agency-hero{
+    background: url('../img/agency-hero-4.jpg');
+    background-position: center;
+    min-height: 65vh;
+}
+
+.hero.hero.is-halfheight.agency-hero .hero-body{
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.title.agency-hero-headline{
+    font-weight: 700;
+    font-size:48px;
+    color:#000;
+    line-height: 1.3;
+    margin-bottom: 35px;
+}
+
+.subtitle.agency-hero-tagline{
+    font-size:11px;
+    line-height: 1.7;
+    font-weight: 500;
+    color:grey;
+}
+
+.button.agency-hero-button{
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 50em;
+    color:#fff;
+    padding: 20px 30px 20px 30px;
+}
+
+.button.agency-hero-button span{
+    font-weight: 500;
+    font-size:12px;
+}
+/* Hero */
+
+
+
+
+
+/* Section About List */
+.agency-about-section{
+    text-align:left;
+    margin-top:25px;
+}
+
+.agency-about-title{
+    color:#000;
+    font-weight: 700;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.agency-about-description{
+    font-weight: 600;
+    font-size:13px;
+}
+
+.content.agency-benefit-content > ul{
+    list-style: none;
+	margin:0;
+}
+
+.agency-benefit-list li{
+    padding-left: 1.6em;
+    font-weight: 500;
+    color: #000;
+    font-size: 15px;
+    margin-top:15px;
+    line-height: 1.8;
+}
+
+.agency-benefit-list li::before{
+    content:"\eed7"; /* FontAwesome Unicode */
+	font-family: Icofont;
+	display: inline-block;
+	margin-left: -1.3em; /* same as padding-left set on li */
+	width: 1.3em; /* same as padding-left set on li */
+    color:#000;
+    font-size:20px;
+}
+/* Section About List */
+
+
+
+
+
+/* Section About & Offer Card */
+.box.agency-card-black{
+    background: #000;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.content.agency-card-black-content{
+    color:#fff;
+    text-align: center;
+    padding:15px;
+}
+
+.content.agency-card-black-content .agency-card-black-title{
+    font-size:15px;
+    font-weight: 500;
+    color:#fff;
+    margin-top:5px;
+}
+
+.content.agency-card-black-content .agency-card-black-description{
+    font-size:15px;
+    font-weight: 300;
+    color:#fff;
+    margin-top:5px;
+}
+
+.box.agency-card{
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 5px whitesmoke;
+    -webkit-box-shadow: 0px 0px 5px 5px whitesmoke;
+    -moz-box-shadow: 0px 0px 5px 5px whitesmoke;
+}
+
+.content.agency-card-content{
+    color:#000;
+    text-align: center;
+    padding:15px;
+}
+
+.content.agency-card-content .agency-card-title{
+    font-size:15px;
+    font-weight: 500;
+    color:#000;
+    margin-top:5px;
+}
+
+.content.agency-card-content .agency-card-description{
+    font-size:15px;
+    font-weight: 300;
+    color:#000;
+    margin-top:5px;
+}
+/* Section About & Offer */
+
+
+
+
+
+/* Section Project */
+.agency-project-section{
+    text-align:left;
+    margin-top:25px;
+}
+
+.agency-project-headline{
+    color:#000;
+    font-weight: 700;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.agency-project-tagline{
+    font-weight: 600;
+    font-size:13px;
+}
+
+.agency-project-img{
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px 3px whitesmoke;
+    -webkit-box-shadow: 0px 0px 3px 3px whitesmoke;
+    -moz-box-shadow: 0px 0px 3px 3px whitesmoke;
+}
+
+/* Slick Carousel */
+.slick-dots li button:before {
+    font-size:10px !important;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 -2px !important;
+    padding: 0;
+    cursor: pointer;
+}
+/* Section Project */
+
+
+
+
+
+/* Section Testimonials */
+.test:before{
+    content: "\efcd";
+    font-family: "Icofont";
+    font-size:80px;
+    color:#000;
+    opacity: 0.1;
+    left: -5%;
+    bottom: 80%;
+    position: absolute;
+}
+
+.test{
+    margin-top:100px;
+    position: relative;
+    z-index: 1;
+}
+
+.test p{
+    font-weight: 500;
+    font-style: italic;
+}
+/* Section Testimonials */
+
+
+
+
+
+/* Section Blogs */
+.agency-blogs-section{
+    text-align:left;
+    margin-top:25px;
+}
+
+.agency-blogs-headline{
+    color:#000;
+    font-weight: 700;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.agency-blogs-tagline{
+    font-weight: 600;
+    font-size:13px;
+}
+
+.card.agency-blogs-card{
+    box-shadow: 0px 0px 4px 4px whitesmoke;
+    -webkit-box-shadow: 0px 0px 4px 4px whitesmoke;
+    -moz-box-shadow: 0px 0px 4px 4px whitesmoke;
+}
+
+.card-content.agency-blogs-card-content{
+    padding:0.9rem;
+}
+
+.content.agency-blogs-content .agency-blogs-title{
+    font-size:16px;
+    font-weight: 600;
+    color:#000;
+    margin-top:5px;
+}
+
+.content.agency-blogs-content .agency-blogs-description{
+    font-size:14px;
+    font-weight: 400;
+    color:grey;
+    margin-top:5px;
+}
+
+.content.agency-blogs-content .agency-blogs-more{
+    font-size:14px;
+    font-weight: 600;
+    color:#000;
+    margin-top:5px;
+}
+/* Section Blogs */
+
+
+
+
+
+/* Section Contact */
+.button.agency-contact-button{
+    background: #000;
+    border: 1px solid #000;
+    border-radius: 50em;
+    color:#fff;
+    padding: 20px 30px 20px 30px;
+    margin-top:25px;
+    margin-bottom:40px;
+}
+
+.button.agency-contact-button span{
+    font-weight: 500;
+    font-size:12px;
+}
+/* Section Contact */
+
+
+
+
+/* Section Footer */
+a.agency-logo{
+    text-decoration: none;
+    color: #fff;
+}
+a.agency-logo:before{
+    content: "the";
+    text-transform: uppercase;
+    font-size:10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+a.agency-logo:after{
+    content: "agency";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.agency-foot-title{
+    font-weight: 700;
+    font-size:20px;
+    color:#fff;
+}
+
+.agency-foot-description{
+    color:#fff;
+    margin-top:20px;
+    font-weight: 300;
+    
+}
+
+.agency-foot-link{
+    margin-top:10px;
+}
+
+.agency-foot-link li{
+    color:#fff;
+    font-weight: 300;
+    line-height: 2.6;
+}
+
+.agency-foot-subs{
+    margin-top:20px;
+}
+
+.input.agency-foot-input{
+    border-radius: 0;
+    border: 3px solid #1a1a1a;
+    background: #1a1a1a;
+    color:#fff;
+}
+
+.button.agency-foot-input-btn{
+    border-radius: 0;
+}
+
+::placeholder{
+    color:#fff !important;
+}
+::-ms-input-placeholder{
+    color:#fff !important;
+}
+
+.tags.agency-social-media{
+    margin-top: 35px;
+    margin-right: 2.5rem;
+}
+
+.tag.agency-social-tag{
+    border-radius: 50em;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.tags .tag:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.tag:not(body) {
+    align-items: center;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    height:2.1em;
+}
+/* Section Footer */
